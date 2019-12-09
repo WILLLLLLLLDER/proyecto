@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diagnosticomedico">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".meditifo"></activity>
+        <activity android:name=".natutifo" />
+        <activity android:name=".medigas" />
+        <activity android:name=".natugas" />
+        <activity android:name=".medituber" />
+        <activity android:name=".natutuber" />
+        <activity android:name=".medidiarrea" />
+        <activity android:name=".natudiarrea" />
+        <activity android:name=".medigripe" />
+        <activity android:name=".natugripe" />
+        <activity android:name=".FiebreTifoidea" />
+        <activity android:name=".Gastritis" />
+        <activity android:name=".Tuberculosis" />
+        <activity android:name=".Diarrea" />
+        <activity android:name=".Gripe" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

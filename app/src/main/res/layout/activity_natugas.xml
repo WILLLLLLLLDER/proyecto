@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azuloscuro"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="238dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/hiervas"></ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="265dp"
+            android:layout_weight="1"
+            android:background="@drawable/boton"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.- Agua de arroz: Hervir 150gr de arroz en un litro de agua durante 20min. Tomar cada mañana."
+                android:textColor="@color/blanco"
+                android:textSize="18sp"
+                android:textStyle="">
+
+            </TextView>
+
+            <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.- Zanahoria y apio: Licuar dos zanahorias y dos ramas de apio con un vaso de agua. Tomar durante el almuerzo."
+            android:textColor="@color/blanco"
+            android:textSize="18sp"
+            android:textStyle="">
+
+        </TextView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.- Maizena: Poner una o dos cucharadas de maicena en un vaso con agua. Tomar en ayunas todos los días."
+                android:textColor="@color/blanco"
+                android:textSize="18sp"
+                android:textStyle="">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota: Si no presenta mejoria, consulte a su medico"
+                android:textColor="@color/blanco"
+                android:textSize="10sp"
+                android:textStyle="">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="volver"
+        android:id="@+id/btnSI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boton_stilo"
+        android:textColor="@color/blanco">
+
+    </Button>
+    <Button
+        android:onClick="medigas"
+        android:id="@+id/btnNO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver medicamentos"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boton_stilo"
+        android:textColor="@color/blanco">
+
+    </Button>
+
+</LinearLayout>

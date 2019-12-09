@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:background="@drawable/men2"
+        android:orientation="vertical"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <LinearLayout
+            android:background="@color/celeste"
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <TextView
+                android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:text="Detección de enfermedades y como curar con medicina natural"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="28sp"
+            android:textStyle="bold"></TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="205dp"
+        android:layout_height="57dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/boton"
+        android:onClick="pre1"
+        android:text="Empezar"
+        android:textColor="#fff"
+        android:textStyle="bold"></Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Nota: Esta aplicacion solo podra diagnosticar 5 enfermedades: Gripe, Diarrea, Tuberculosis, Gastritis y Fiebre tifoidea."
+        android:textAlignment="center"
+        android:textColor="@color/celeste"
+        android:background="@drawable/et_bg"
+        android:textSize="12dp"
+        android:textStyle=""></TextView>
+
+</LinearLayout>

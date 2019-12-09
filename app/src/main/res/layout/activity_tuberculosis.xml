@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azuloscuro"
+    android:padding="5dp"
+    android:layout_gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione los sintomas que presenta"
+        android:textAlignment="center"
+        android:textColor="@color/blanco"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="350dp"
+            android:layout_weight="1"
+            android:background="@drawable/tos"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/c1"
+                android:textColor="@color/azuloscuro"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:onClick="calcu"
+                android:text="Tos intensa por más de 3 semanas" />
+
+            <CheckBox
+                android:id="@+id/c2"
+                android:textColor="@color/azuloscuro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:onClick="calcu2"
+                android:text="Dolor en el pecho"
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/c3"
+                android:textColor="@color/azuloscuro"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:onClick="calcu3"
+                android:text="Tos con sangre o flema" />
+
+            <CheckBox
+                android:id="@+id/c4"
+                android:textColor="@color/azuloscuro"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:onClick="calcu4"
+                android:text="Fatiga o debilidad" />
+
+            <CheckBox
+                android:id="@+id/c5"
+                android:textColor="@color/azuloscuro"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:onClick="calcu5"
+                android:text="Pérdida de peso" />
+
+            <CheckBox
+                android:id="@+id/c6"
+                android:textColor="@color/azuloscuro"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:onClick="calcu6"
+                android:text="Escalofríos" />
+
+            <CheckBox
+            android:id="@+id/c7"
+            android:textColor="@color/azuloscuro"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_bg"
+            android:onClick="calcu7"
+            android:text="Fiebre" />
+
+            <CheckBox
+                android:id="@+id/c8"
+                android:textColor="@color/azuloscuro"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_bg"
+                android:onClick="calcu8"
+                android:text="Falta de apetito" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"
+        android:background="@drawable/boton"></TextView>
+    <Button
+        android:onClick="natutuber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicina Natural"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boton_stilo"
+        android:textColor="@color/blanco">
+
+    </Button>
+    <Button
+        android:onClick="medituber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicamento"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boton_stilo"
+        android:textColor="@color/blanco">
+
+    </Button>
+    <Button
+        android:id="@+id/btnNO"
+        android:onClick="volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/boton_stilo"
+        android:textColor="@color/blanco">
+
+    </Button>
+
+</LinearLayout>
